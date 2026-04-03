@@ -1,49 +1,824 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40">
- <head>
-  <meta name="Excel Workbook Frameset">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="ProgId" content="Excel.Sheet">
-  <meta name="Generator" content="WPS Office ET">
-  <!--[if gte mso 9]>
-   <xml>
-    <o:DocumentProperties>
-     <o:Created>2026-04-02T22:41:06</o:Created>
-     <o:LastAuthor>Hand king</o:LastAuthor>
-     <o:LastSaved>2026-04-02T22:41:54</o:LastSaved>
-    </o:DocumentProperties>
-    <o:CustomDocumentProperties>
-     <o:ICV dt:dt="string">95F20353407E4B978A2A2E60164D7F01_12</o:ICV>
-     <o:KSOProductBuildVer dt:dt="string">1033-12.2.0.23196</o:KSOProductBuildVer>
-    </o:CustomDocumentProperties>
-   </xml>
-  <![endif]-->
-  <link rel="File-List" href="birthday_celebration_site.files/filelist.xml">
-  <link id="shLink" href="birthday_celebration_site.files/sheet001.htm">
-  <!--[if gte mso 9]>
-   <xml>
-    <x:ExcelWorkbook>
-     <x:ExcelWorksheets>
-      <x:ExcelWorksheet>
-       <x:Name>birthday_celebration_site</x:Name>
-       <x:WorksheetSource HRef="birthday_celebration_site.files/sheet001.htm"/>
-      </x:ExcelWorksheet>
-     </x:ExcelWorksheets>
-     <x:Stylesheet HRef="birthday_celebration_site.files/stylesheet.css"/>
-     <x:ProtectStructure>False</x:ProtectStructure>
-     <x:ProtectWindows>False</x:ProtectWindows>
-     <x:WindowHeight>9720</x:WindowHeight>
-     <x:WindowWidth>11520</x:WindowWidth>
-    </x:ExcelWorkbook>
-   </xml>
-  <![endif]-->
- </head>
- <frameset rows="*,18" border="0" width="0" frameborder="no">
-  <frame src="birthday_celebration_site.files/sheet001.htm" name="frSheet" noresize/>
-  <frame src="birthday_celebration_site.files/tabstrip.htm" name="frTabs" marginwidth="0" marginheight="0"/>
-  <noframes>
-   <body>
-    <p>此页面使用了框架，而您的浏览器不支持框架</p>
-   </body>
-  </noframes>
- </frameset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday, Vaseem Sultana 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rose: #e8638a;
+    --rose-deep: #c0435f;
+    --rose-light: #f4a0b8;
+    --rose-pale: #fde8ef;
+    --gold: #d4a853;
+    --gold-light: #f0cc7a;
+    --cream: #fdf6f0;
+    --warm-white: #fffaf7;
+    --blush: #fce4ec;
+    --mauve: #b56a82;
+    --dark: #2a1520;
+    --text: #4a2535;
+  }
+ 
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+ 
+  body {
+    font-family: 'Cormorant Garamond', serif;
+    background: var(--warm-white);
+    color: var(--text);
+    overflow-x: hidden;
+    cursor: none;
+  }
+ 
+  /* Custom cursor */
+  .cursor {
+    width: 20px; height: 20px;
+    border: 2px solid var(--rose);
+    border-radius: 50%;
+    position: fixed; pointer-events: none;
+    z-index: 9999; transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
+    mix-blend-mode: multiply;
+  }
+  .cursor-dot {
+    width: 6px; height: 6px;
+    background: var(--rose-deep);
+    border-radius: 50%;
+    position: fixed; pointer-events: none;
+    z-index: 9999; transform: translate(-50%, -50%);
+  }
+ 
+  /* ── CANVAS ── */
+  #petal-canvas {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
+  }
+ 
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #fff0f5 0%, #fde8ef 40%, #fdf0e8 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+    position: relative; overflow: hidden; z-index: 1;
+  }
+ 
+  .hero-bg-circle {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(232,99,138,0.12), transparent 70%);
+    pointer-events: none;
+  }
+  .hbc1 { width: 700px; height: 700px; top: -200px; left: -200px; }
+  .hbc2 { width: 500px; height: 500px; bottom: -150px; right: -100px; }
+  .hbc3 { width: 300px; height: 300px; top: 50%; left: 50%; transform: translate(-50%,-50%); background: radial-gradient(circle, rgba(212,168,83,0.08), transparent 70%); }
+ 
+  .hero-ribbon {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem; color: var(--gold);
+    letter-spacing: 3px;
+    opacity: 0; animation: fadeDown 1s 0.3s forwards;
+    margin-bottom: 1rem;
+  }
+ 
+  .hero-number {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(7rem, 22vw, 18rem);
+    font-weight: 900; line-height: 0.85;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(232,99,138,0.25);
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    z-index: 0; pointer-events: none;
+    animation: fadeIn 1.5s 0.1s forwards;
+    opacity: 0;
+  }
+ 
+  .hero-content { position: relative; z-index: 2; }
+ 
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 400; font-style: italic;
+    color: var(--mauve); letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0; animation: fadeDown 1s 0.5s forwards;
+    margin-bottom: 0.5rem;
+  }
+ 
+  .hero-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(3.5rem, 10vw, 8rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--rose-deep), var(--rose), var(--gold));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+    opacity: 0; animation: fadeUp 1.2s 0.7s forwards;
+    filter: drop-shadow(0 4px 20px rgba(232,99,138,0.3));
+  }
+ 
+  .hero-age {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--rose-light); letter-spacing: 8px;
+    text-transform: uppercase; font-weight: 400;
+    opacity: 0; animation: fadeUp 1s 1s forwards;
+    margin-top: 0.5rem;
+  }
+ 
+  .hero-divider {
+    width: 120px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 2rem auto;
+    opacity: 0; animation: fadeIn 1s 1.2s forwards;
+  }
+ 
+  .hero-message {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-style: italic; color: var(--mauve);
+    max-width: 500px; line-height: 1.8;
+    opacity: 0; animation: fadeUp 1s 1.4s forwards;
+  }
+ 
+  .hero-heart {
+    font-size: 2rem; margin-top: 2rem;
+    opacity: 0; animation: heartBeat 1s 1.8s forwards;
+    display: inline-block;
+  }
+ 
+  .scroll-hint {
+    position: absolute; bottom: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.9rem; color: var(--rose-light);
+    letter-spacing: 2px;
+    animation: bounce 2s ease-in-out infinite;
+    opacity: 0; animation: fadeIn 1s 2.5s forwards, bounce 2s 3.5s ease-in-out infinite;
+  }
+ 
+  /* ── SECTIONS COMMON ── */
+  section { position: relative; z-index: 1; }
+  .section-inner { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; text-align: center; }
+ 
+  .sec-label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem; color: var(--gold);
+    letter-spacing: 2px; margin-bottom: 0.8rem;
+    display: block;
+  }
+  .sec-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700; color: var(--dark);
+    line-height: 1.2; margin-bottom: 1.5rem;
+  }
+  .sec-title .rose { color: var(--rose-deep); font-style: italic; }
+  .sec-divider {
+    width: 80px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--rose), transparent);
+    margin: 0 auto 2rem;
+  }
+ 
+  /* ── REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-left { opacity: 0; transform: translateX(-30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal-left.visible { opacity: 1; transform: translateX(0); }
+  .d1{transition-delay:0.1s} .d2{transition-delay:0.2s} .d3{transition-delay:0.3s}
+  .d4{transition-delay:0.4s} .d5{transition-delay:0.5s} .d6{transition-delay:0.6s}
+ 
+  /* ── WISHES SECTION ── */
+  #wishes { background: linear-gradient(180deg, var(--warm-white) 0%, var(--blush) 100%); }
+ 
+  .wish-card {
+    background: white;
+    border-radius: 24px; padding: 3rem 2.5rem;
+    box-shadow: 0 10px 60px rgba(232,99,138,0.1);
+    border: 1px solid rgba(232,99,138,0.1);
+    position: relative; overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .wish-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem; color: rgba(232,99,138,0.06);
+    position: absolute; top: -2rem; left: 1rem;
+    line-height: 1; pointer-events: none;
+  }
+  .wish-text {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-style: italic; line-height: 1.9;
+    color: var(--text);
+  }
+  .wish-text .highlight { color: var(--rose-deep); font-weight: 600; }
+  .wish-from {
+    margin-top: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem; color: var(--gold);
+  }
+ 
+  /* ── COUNTDOWN / BIRTHDAY FACTS ── */
+  #celebrate { background: var(--blush); }
+ 
+  .facts-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;
+  }
+  .fact-card {
+    background: white; border-radius: 20px; padding: 2rem 1.5rem;
+    box-shadow: 0 8px 40px rgba(232,99,138,0.08);
+    border: 1px solid rgba(232,99,138,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .fact-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(232,99,138,0.18); }
+  .fact-emoji { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+  .fact-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; font-weight: 900;
+    color: var(--rose-deep); line-height: 1;
+  }
+  .fact-label { font-size: 0.9rem; color: var(--mauve); margin-top: 0.4rem; letter-spacing: 1px; }
+ 
+  /* ── LOVE LETTER ── */
+  #letter {
+    background: linear-gradient(160deg, #fff5f8 0%, #fdf6f0 100%);
+  }
+  .letter-paper {
+    background: white;
+    border-radius: 4px 4px 4px 4px;
+    max-width: 680px; margin: 0 auto;
+    padding: 4rem 3.5rem;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.08), 0 0 0 1px rgba(232,99,138,0.08);
+    position: relative;
+    text-align: left;
+  }
+  .letter-paper::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--rose-pale), var(--rose), var(--rose-deep), var(--rose), var(--rose-pale));
+  }
+  .letter-stamp {
+    position: absolute; top: 1.5rem; right: 1.5rem;
+    width: 60px; height: 70px;
+    background: var(--rose-pale); border: 2px solid var(--rose-light);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; border-radius: 2px;
+  }
+  .letter-date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem; color: var(--mauve);
+    margin-bottom: 2rem;
+  }
+  .letter-salutation {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; font-style: italic;
+    color: var(--rose-deep); margin-bottom: 1.5rem;
+  }
+  .letter-body {
+    font-size: 1.05rem; line-height: 2;
+    color: var(--text); margin-bottom: 2rem;
+  }
+  .letter-body p { margin-bottom: 1.2rem; }
+  .letter-closing {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem; color: var(--mauve);
+    margin-bottom: 0.5rem;
+  }
+  .letter-sig {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem; color: var(--rose-deep);
+    font-weight: 700;
+  }
+ 
+  /* ── WISHES WALL ── */
+  #wall { background: var(--warm-white); }
+ 
+  .wishes-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 2rem;
+  }
+  .wish-tile {
+    padding: 1.8rem 1.5rem; border-radius: 18px;
+    text-align: center; position: relative; overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .wish-tile:hover { transform: scale(1.03); }
+  .wish-tile.pink { background: linear-gradient(135deg, #fde8ef, #f9c6d4); }
+  .wish-tile.gold { background: linear-gradient(135deg, #fdf4e3, #f5e0a8); }
+  .wish-tile.rose { background: linear-gradient(135deg, #fff0f5, #fddce7); }
+  .wish-tile.peach { background: linear-gradient(135deg, #fff5ee, #fde0c8); }
+  .wish-tile.lavender { background: linear-gradient(135deg, #f5f0ff, #e8d8f8); }
+  .wish-tile.mint { background: linear-gradient(135deg, #f0fff8, #c8f0e0); }
+  .wish-tile-emoji { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
+  .wish-tile-text {
+    font-size: 0.95rem; line-height: 1.6; color: var(--dark);
+    font-style: italic;
+  }
+ 
+  /* ── MEMORIES / TIMELINE ── */
+  #journey { background: linear-gradient(180deg, var(--blush) 0%, var(--warm-white) 100%); }
+  .timeline { position: relative; padding: 2rem 0; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 50%; top: 0; bottom: 0;
+    width: 2px; transform: translateX(-50%);
+    background: linear-gradient(180deg, transparent, var(--rose-light), var(--rose), var(--rose-light), transparent);
+  }
+  .timeline-item {
+    display: flex; align-items: center; gap: 2rem;
+    margin-bottom: 3rem; position: relative;
+  }
+  .timeline-item:nth-child(even) { flex-direction: row-reverse; }
+  .timeline-content {
+    flex: 1; padding: 2rem;
+    background: white; border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(232,99,138,0.08);
+    border: 1px solid rgba(232,99,138,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  .timeline-content:hover { transform: translateY(-4px); }
+  .timeline-item:nth-child(even) .timeline-content { text-align: right; }
+  .timeline-dot {
+    width: 50px; height: 50px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 0 0 8px white, 0 0 0 10px var(--rose-light);
+    z-index: 2;
+  }
+  .timeline-year {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8rem; color: var(--rose);
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .timeline-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; font-weight: 700; color: var(--dark);
+    margin-bottom: 0.5rem;
+  }
+  .timeline-desc { font-size: 0.9rem; color: var(--mauve); line-height: 1.6; }
+ 
+  /* ── FINAL SECTION ── */
+  #finale {
+    background: linear-gradient(160deg, #1a0810 0%, #2a1520 50%, #1a0810 100%);
+    min-height: 80vh; display: flex; align-items: center; justify-content: center;
+    text-align: center; overflow: hidden;
+  }
+  .finale-inner { padding: 4rem 2rem; position: relative; z-index: 2; }
+  .finale-glow {
+    position: absolute; border-radius: 50%;
+    background: radial-gradient(circle, rgba(232,99,138,0.2), transparent 70%);
+    width: 600px; height: 600px;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+  .finale-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: var(--rose-light); font-weight: 700;
+    margin-bottom: 1rem;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  .finale-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    font-weight: 900; font-style: italic;
+    background: linear-gradient(135deg, var(--rose-light), var(--gold-light), var(--rose-light));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+  .finale-hearts {
+    font-size: 2.5rem; margin: 2rem 0;
+    animation: heartBeat 1.5s ease-in-out infinite;
+    display: block;
+  }
+  .finale-msg {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: rgba(253,210,220,0.8);
+    font-style: italic; max-width: 500px; margin: 0 auto;
+    line-height: 1.8;
+  }
+  .finale-from {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem; color: var(--gold-light);
+    margin-top: 2.5rem;
+  }
+ 
+  /* ── FLOATING HEARTS ── */
+  .float-hearts { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+  .fheart {
+    position: absolute; font-size: 1.2rem;
+    animation: floatUp 8s linear infinite;
+    opacity: 0;
+  }
+ 
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown { from{opacity:0;transform:translateY(-20px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+  @keyframes heartBeat {
+    0%,100%{transform:scale(1)} 14%{transform:scale(1.3)} 28%{transform:scale(1)} 42%{transform:scale(1.2)} 70%{transform:scale(1)}
+  }
+  @keyframes bounce {
+    0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)}
+  }
+  @keyframes glowPulse {
+    0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)}
+    50%{opacity:1;transform:translate(-50%,-50%) scale(1.2)}
+  }
+  @keyframes shimmer {
+    0%,100%{text-shadow:0 0 20px rgba(232,99,138,0.3)}
+    50%{text-shadow:0 0 60px rgba(232,99,138,0.8), 0 0 100px rgba(232,99,138,0.4)}
+  }
+  @keyframes gradientShift {
+    0%,100%{background-position:0%} 50%{background-position:100%}
+  }
+  @keyframes floatUp {
+    0%{opacity:0;transform:translateY(100vh) rotate(0deg)}
+    10%{opacity:0.8}
+    90%{opacity:0.4}
+    100%{opacity:0;transform:translateY(-10vh) rotate(360deg)}
+  }
+  @keyframes petalFall {
+    0%{transform:translateY(-20px) rotate(0deg);opacity:0.9}
+    100%{transform:translateY(100vh) rotate(360deg);opacity:0}
+  }
+  @keyframes confettiFall {
+    0%{transform:translateY(-20px) rotate(0deg)}
+    100%{transform:translateY(100vh) rotate(720deg)}
+  }
+ 
+  /* ── RESPONSIVE ── */
+  @media(max-width:700px) {
+    .facts-grid { grid-template-columns: 1fr 1fr; }
+    .wishes-grid { grid-template-columns: 1fr 1fr; }
+    .timeline::before { left: 20px; }
+    .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; align-items: flex-start; padding-left: 60px; }
+    .timeline-dot { position: absolute; left: 0; }
+    .timeline-item:nth-child(even) .timeline-content { text-align: left; }
+    .letter-paper { padding: 2.5rem 1.5rem; }
+  }
+  @media(max-width:480px) {
+    .facts-grid { grid-template-columns: 1fr; }
+    .wishes-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+ 
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+ 
+<!-- Falling Petals Canvas -->
+<canvas id="petal-canvas"></canvas>
+ 
+<!-- Floating Hearts -->
+<div class="float-hearts" id="floatHearts"></div>
+ 
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-bg-circle hbc1"></div>
+  <div class="hero-bg-circle hbc2"></div>
+  <div class="hero-bg-circle hbc3"></div>
+  <div class="hero-number">18</div>
+  <div class="hero-content">
+    <div class="hero-ribbon">✦ A Special Celebration ✦</div>
+    <div class="hero-title">Happy 18th Birthday</div>
+    <div class="hero-name">Vaseem Sultana</div>
+    <div class="hero-age">· Eighteen & Blooming ·</div>
+    <div class="hero-divider"></div>
+    <div class="hero-message">
+      Today the world is brighter because you're in it.<br>
+      Welcome to your most beautiful chapter yet.
+    </div>
+    <div class="hero-heart">💖</div>
+  </div>
+  <div class="scroll-hint">scroll down ↓</div>
+</section>
+ 
+<!-- ═══════ WISHES ═══════ -->
+<section id="wishes">
+  <div class="section-inner">
+    <span class="sec-label reveal">From the Heart</span>
+    <h2 class="sec-title reveal">A Birthday <span class="rose">Wish</span> for You</h2>
+    <div class="sec-divider reveal"></div>
+    <div class="wish-card reveal">
+      <div class="wish-text">
+        On this magical day, I want you to know that you are the most
+        <span class="highlight">beautiful soul</span> I have ever known.
+        Your smile lights up every room, your laughter is music to my ears,
+        and your heart is made of the purest gold.
+        <br><br>
+        Turning <span class="highlight">18</span> means the world opens up its arms wider for you —
+        and I know you're going to take it by storm. You are smart, kind, fearless, and breathtakingly
+        <span class="highlight">wonderful</span>. Today is just the beginning.
+      </div>
+      <div class="wish-from">— With all my love & more 💕</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════ CELEBRATE ═══════ -->
+<section id="celebrate">
+  <div class="section-inner">
+    <span class="sec-label reveal">By the Numbers</span>
+    <h2 class="sec-title reveal">18 Years of <span class="rose">Magic</span></h2>
+    <div class="sec-divider reveal"></div>
+    <div class="facts-grid">
+      <div class="fact-card reveal d1">
+        <span class="fact-emoji">🌹</span>
+        <div class="fact-num">18</div>
+        <div class="fact-label">Years of Sunshine</div>
+      </div>
+      <div class="fact-card reveal d2">
+        <span class="fact-emoji">💫</span>
+        <div class="fact-num">6,570</div>
+        <div class="fact-label">Days of Being Amazing</div>
+      </div>
+      <div class="fact-card reveal d3">
+        <span class="fact-emoji">💝</span>
+        <div class="fact-num">∞</div>
+        <div class="fact-label">Reasons You're Special</div>
+      </div>
+      <div class="fact-card reveal d4">
+        <span class="fact-emoji">🌸</span>
+        <div class="fact-num">157,680</div>
+        <div class="fact-label">Hours of Blooming</div>
+      </div>
+      <div class="fact-card reveal d5">
+        <span class="fact-emoji">✨</span>
+        <div class="fact-num">100%</div>
+        <div class="fact-label">Pure Perfection</div>
+      </div>
+      <div class="fact-card reveal d6">
+        <span class="fact-emoji">🎂</span>
+        <div class="fact-num">1</div>
+        <div class="fact-label">Girl Who Owns My Heart</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════ LOVE LETTER ═══════ -->
+<section id="letter">
+  <div class="section-inner">
+    <span class="sec-label reveal">A Letter for You</span>
+    <h2 class="sec-title reveal">Words From <span class="rose">My Heart</span></h2>
+    <div class="sec-divider reveal"></div>
+    <div class="letter-paper reveal">
+      <div class="letter-stamp">💌</div>
+      <div class="letter-date">On this special day, your 18th birthday...</div>
+      <div class="letter-salutation">My dearest Vaseem Sultana,</div>
+      <div class="letter-body">
+        <p>Where do I even begin? You walked into my life and turned every ordinary moment into something extraordinary. The way you laugh, the way you care, the way you see the world — it all leaves me breathless.</p>
+        <p>Today you turn 18 — and while to the world that means freedom and new beginnings, to me it means getting to watch you blossom even more into the incredible woman you already are. You were always destined for great things.</p>
+        <p>I promise to be by your side through every adventure, every dream, and every moment. Your happiness is my purpose, your smile is my reward, and your love is my greatest blessing.</p>
+        <p>On this day, I wish you a life full of everything you deserve — joy, love, success, laughter, and all the beautiful things this world has to offer. Because you, my love, deserve every good thing.</p>
+        <p>Happy 18th Birthday. You are my world. You are my everything.</p>
+      </div>
+      <div class="letter-closing">Forever and always yours,</div>
+      <div class="letter-sig">Your person 💕</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════ JOURNEY ═══════ -->
+<section id="journey">
+  <div class="section-inner">
+    <span class="sec-label reveal">Your Beautiful Story</span>
+    <h2 class="sec-title reveal">18 Years in the <span class="rose">Making</span></h2>
+    <div class="sec-divider reveal"></div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-year">Day One</div>
+          <div class="timeline-title">A Star Was Born 🌟</div>
+          <div class="timeline-desc">The world became a more beautiful place the moment you arrived. Soft, precious, and already extraordinary.</div>
+        </div>
+        <div class="timeline-dot">👶</div>
+        <div style="flex:1"></div>
+      </div>
+      <div class="timeline-item reveal d1">
+        <div style="flex:1"></div>
+        <div class="timeline-dot">🌸</div>
+        <div class="timeline-content">
+          <div class="timeline-year">Growing Up</div>
+          <div class="timeline-title">Dreams Taking Shape ✨</div>
+          <div class="timeline-desc">Every year you grew wiser, kinder, and more brilliant. Watching you discover the world was pure magic.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal d2">
+        <div class="timeline-content">
+          <div class="timeline-year">The Journey</div>
+          <div class="timeline-title">Finding Your Light 💫</div>
+          <div class="timeline-desc">Through every challenge, you shone brighter. Your strength and grace became your superpowers.</div>
+        </div>
+        <div class="timeline-dot">💪</div>
+        <div style="flex:1"></div>
+      </div>
+      <div class="timeline-item reveal d3">
+        <div style="flex:1"></div>
+        <div class="timeline-dot">🎂</div>
+        <div class="timeline-content">
+          <div class="timeline-year">Today · 18</div>
+          <div class="timeline-title">Your Best Chapter Begins 🌹</div>
+          <div class="timeline-desc">Today you turn 18 — beautiful, brilliant, and boundless. The whole world is waiting for you, and you are more than ready.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════ WISHES WALL ═══════ -->
+<section id="wall">
+  <div class="section-inner">
+    <span class="sec-label reveal">Birthday Blessings</span>
+    <h2 class="sec-title reveal">18 Wishes <span class="rose">for You</span></h2>
+    <div class="sec-divider reveal"></div>
+    <div class="wishes-grid">
+      <div class="wish-tile pink reveal d1">
+        <span class="wish-tile-emoji">🌹</span>
+        <div class="wish-tile-text">May every day bring you joy as radiant as your smile</div>
+      </div>
+      <div class="wish-tile gold reveal d2">
+        <span class="wish-tile-emoji">⭐</span>
+        <div class="wish-tile-text">May your dreams be bigger than your fears</div>
+      </div>
+      <div class="wish-tile rose reveal d3">
+        <span class="wish-tile-emoji">💕</span>
+        <div class="wish-tile-text">May love follow you everywhere you go</div>
+      </div>
+      <div class="wish-tile peach reveal d4">
+        <span class="wish-tile-emoji">🦋</span>
+        <div class="wish-tile-text">May you spread your wings and fly without limits</div>
+      </div>
+      <div class="wish-tile lavender reveal d5">
+        <span class="wish-tile-emoji">✨</span>
+        <div class="wish-tile-text">May magic find you in the ordinary moments</div>
+      </div>
+      <div class="wish-tile mint reveal d6">
+        <span class="wish-tile-emoji">🌿</span>
+        <div class="wish-tile-text">May you always bloom, even in the hardest seasons</div>
+      </div>
+      <div class="wish-tile gold reveal d1">
+        <span class="wish-tile-emoji">🎯</span>
+        <div class="wish-tile-text">May every goal you set become a reality</div>
+      </div>
+      <div class="wish-tile rose reveal d2">
+        <span class="wish-tile-emoji">🌙</span>
+        <div class="wish-tile-text">May your nights be peaceful and your mornings bright</div>
+      </div>
+      <div class="wish-tile pink reveal d3">
+        <span class="wish-tile-emoji">💎</span>
+        <div class="wish-tile-text">May you always know your worth — you are priceless</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ═══════ FINALE ═══════ -->
+<section id="finale">
+  <div class="finale-glow"></div>
+  <div class="finale-inner reveal">
+    <div class="finale-title">Happy Birthday,</div>
+    <div class="finale-name">Vaseem Sultana</div>
+    <span class="finale-hearts">💖 🌹 💖</span>
+    <div class="finale-msg">
+      You are my sunshine, my universe, my heart.<br>
+      On your 18th birthday and every day after —<br>
+      <em>you are deeply, completely, endlessly loved.</em>
+    </div>
+    <div class="finale-from">— Your person, forever 🌹</div>
+  </div>
+</section>
+ 
+<script>
+// ── CUSTOM CURSOR ──
+const cur = document.getElementById('cursor');
+const dot = document.getElementById('cursorDot');
+document.addEventListener('mousemove', e => {
+  cur.style.left = e.clientX + 'px';
+  cur.style.top = e.clientY + 'px';
+  dot.style.left = e.clientX + 'px';
+  dot.style.top = e.clientY + 'px';
+});
+document.querySelectorAll('a,button,.fact-card,.wish-card,.wish-tile').forEach(el => {
+  el.addEventListener('mouseenter', () => { cur.style.transform = 'translate(-50%,-50%) scale(2)'; cur.style.background = 'rgba(232,99,138,0.1)'; });
+  el.addEventListener('mouseleave', () => { cur.style.transform = 'translate(-50%,-50%) scale(1)'; cur.style.background = 'transparent'; });
+});
+ 
+// ── PETAL CANVAS ──
+const canvas = document.getElementById('petal-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+ 
+const petals = [];
+const petalColors = ['#f4a0b8','#e8638a','#fddce7','#d4a853','#f9c6d4','#fde8ef'];
+const petalEmojis = ['🌸','🌹','🌺','✿','❀'];
+ 
+class Petal {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = -20;
+    this.size = Math.random() * 12 + 6;
+    this.speedY = Math.random() * 1.5 + 0.5;
+    this.speedX = Math.random() * 1.5 - 0.75;
+    this.rotation = Math.random() * 360;
+    this.rotSpeed = Math.random() * 2 - 1;
+    this.opacity = Math.random() * 0.5 + 0.3;
+    this.color = petalColors[Math.floor(Math.random() * petalColors.length)];
+    this.wobble = Math.random() * 0.04;
+    this.wobbleT = Math.random() * Math.PI * 2;
+  }
+  update() {
+    this.y += this.speedY;
+    this.wobbleT += this.wobble;
+    this.x += this.speedX + Math.sin(this.wobbleT) * 0.8;
+    this.rotation += this.rotSpeed;
+    if (this.y > canvas.height + 20) this.reset();
+  }
+  draw() {
+    ctx.save();
+    ctx.translate(this.x, this.y);
+    ctx.rotate(this.rotation * Math.PI / 180);
+    ctx.globalAlpha = this.opacity;
+    ctx.fillStyle = this.color;
+    // Draw petal shape
+    ctx.beginPath();
+    ctx.ellipse(0, 0, this.size, this.size * 0.5, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+ 
+for (let i = 0; i < 40; i++) {
+  const p = new Petal();
+  p.y = Math.random() * canvas.height;
+  petals.push(p);
+}
+ 
+function animatePetals() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  petals.forEach(p => { p.update(); p.draw(); });
+  requestAnimationFrame(animatePetals);
+}
+animatePetals();
+ 
+// ── FLOATING HEARTS ──
+const heartContainer = document.getElementById('floatHearts');
+const heartChars = ['💕','💖','💗','💓','🌹','✨','🌸','💫'];
+function spawnHeart() {
+  const el = document.createElement('div');
+  el.className = 'fheart';
+  el.textContent = heartChars[Math.floor(Math.random() * heartChars.length)];
+  el.style.left = Math.random() * 100 + 'vw';
+  el.style.fontSize = (Math.random() * 1.2 + 0.6) + 'rem';
+  el.style.animationDuration = (Math.random() * 5 + 6) + 's';
+  el.style.animationDelay = (Math.random() * 3) + 's';
+  heartContainer.appendChild(el);
+  setTimeout(() => el.remove(), 12000);
+}
+setInterval(spawnHeart, 800);
+ 
+// ── SCROLL REVEAL ──
+const revEls = document.querySelectorAll('.reveal, .reveal-left');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+revEls.forEach(el => observer.observe(el));
+ 
+// ── CONFETTI on load ──
+function launchConfetti() {
+  const colors = ['#e8638a','#d4a853','#f4a0b8','#fddce7','#c0435f','#f0cc7a'];
+  for (let i = 0; i < 80; i++) {
+    setTimeout(() => {
+      const conf = document.createElement('div');
+      conf.style.cssText = `
+        position:fixed; top:-10px;
+        left:${Math.random()*100}vw;
+        width:${Math.random()*10+4}px;
+        height:${Math.random()*10+4}px;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        border-radius:${Math.random()>0.5?'50%':'2px'};
+        pointer-events:none; z-index:9998;
+        animation:confettiFall ${Math.random()*2+2}s linear forwards;
+        opacity:0.9;
+      `;
+      document.body.appendChild(conf);
+      setTimeout(() => conf.remove(), 4000);
+    }, i * 40);
+  }
+}
+window.addEventListener('load', () => { setTimeout(launchConfetti, 600); });
+</script>
+</body>
 </html>
